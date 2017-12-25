@@ -1,5 +1,10 @@
 * Overview
+[[http://sox.sourceforge.net][SoX]] is a command line tool for manipulating audio files, naturally the tool is best used from 
+emacs 
 * Installation
+#+BEGIN_SRC elisp
+(load-file "./sox.el")
+#+END_SRC
 * Usage
 * Extending
 * Implementation
