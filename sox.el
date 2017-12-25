@@ -41,21 +41,6 @@
 				 "'")
 			 (concat "*" command-name "*" " - " " task " " - "  command-argument))))
 
-(defun command-line-tool  (command-name command-argument task-list  &optional task)
-  (interactive "argument")
-  (let* ((task
-	  (if (string= nil task)
-	      (completing-read "task: " task-list)
-	    task)))
-
-    (async-shell-command (concat command-name
-				 " "
-				 task
-				 " '" 
-				 command-argument
-				 "'")
-			 (concat "*" command-name "*" " - " " task " " - "  command-argument))))
-
 (defun brew (package &optional task)
   (interactive "spackage")
   (command-line-tool "brew"
@@ -204,4 +189,4 @@
 
 (provide 'sox.el)
 
-;;; sox.el.el ends here
+;;; sox.el ends here

@@ -46,24 +46,6 @@
 				   "'")
 			   (concat "*" command-name "*" " - " " task " " - "  command-argument))))
 #+END_SRC
-** command line tool io
-#+BEGIN_SRC elisp :tangle sox.el
-  (defun command-line-tool  (command-name command-argument task-list  &optional task)
-    (interactive "argument")
-    (let* ((task
-	    (if (string= nil task)
-		(completing-read "task: " task-list)
-	      task)))
-
-      (async-shell-command (concat command-name
-				   " "
-				   task
-				   " '" 
-				   command-argument
-				   "'")
-			   (concat "*" command-name "*" " - " " task " " - "  command-argument))))
-#+END_SRC
-
 ** brew command
 #+BEGIN_SRC elisp :tangle sox.el
   (defun brew (package &optional task)
@@ -237,6 +219,6 @@
 
 (provide 'sox.el)
 
-;;; sox.el.el ends here
+;;; sox.el ends here
 
 #+END_SRC
