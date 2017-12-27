@@ -1,6 +1,15 @@
-* Overview
-[[http://sox.sourceforge.net][SoX]] is a command line tool for manipulating audio files, naturally the tool is best used from 
-emacs 
+* SoX.el
+[[http://sox.sourceforge.net][SoX]] is a command line tool for manipulating audio files, naturally the tool is best used from emacs 
+
+* Overview                                                              :TOC:
+- [[#soxel][SoX.el]]
+- [[#installation][Installation]]
+- [[#usage][Usage]]
+- [[#extending][Extending]]
+- [[#implementation][Implementation]]
+  - [[#soxorg][sox.org]]
+  - [[#makefile][Makefile]]
+
 * Installation
 #+BEGIN_SRC elisp
 (load-file "./sox.el")
